@@ -50,6 +50,8 @@ public:
 
 protected:
 
+	void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
+
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
 
@@ -58,9 +60,6 @@ protected:
 			
 
 protected:
-	// APawn interface
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
 	// To add mapping context
 	virtual void BeginPlay();
 
